@@ -1,0 +1,63 @@
+h1
+	font-family: Open Sans
+	font-size: 48px
+	font-transform: uppercase
+	color: red
+
+p
+	color: green
+
+body
+	background:
+		image: url(../img/blago.jpg)
+
+header
+	// background: #ccc
+  
+	.header-lock
+		width: 510px
+		margin: 50px auto 0
+    
+		.logo-plus
+			+display(flex)
+
+			.logo
+				+size(108px)
+				background:
+					image: url(../img/logo.png)
+				box-shadow: 1px 1px 8px rgba(0,0,0,0.5)
+
+			.press
+				width: 323px
+				background:
+					image: url(../img/press.png)
+				// box-shadow: 1px 1px 6px rgba(0,0,0,0.5)
+      
+		.nav-btn
+			display: inline-block
+			+display(flex)
+			+justify-content(space-between)
+
+			.btn
+				+size(108px)
+				margin-top: 25px
+				background:
+					image: url(../img/transparent-test.png)
+				text-align: center
+				position: relative
+				box-shadow: 1px 1px 8px rgba(0,0,0,0.5)
+
+				a
+					font:
+						family: 'Open Sans', Arial
+						size: 12px
+						weight: 900
+					padding-top: 80px
+					position: absolute
+					left: 0
+					right: 0
+					color: white
+					text-transform: uppercase
+          
+					&:hover
+						color: rgba(255,255,255,0.7)

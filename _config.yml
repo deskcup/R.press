@@ -2,3 +2,7 @@ markdown: redcarpet
 baseurl: /R.press
 exclude: ['README.md']
 permalink: pretty
+
+sass:
+  sass_dir: assets/css
+  style: :nested
