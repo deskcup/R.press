@@ -1,10 +1,12 @@
+---
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<title>R.press</title>
 	<link rel="stylesheet" href="{{site.baseurl}}/assets/css/main.css" />
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+	<link rel="shortcut icon" href="{{site.baseurl}}/assets/css/favicon.ico">
 </head>
 <body>
 	<header>
@@ -14,10 +16,15 @@
 				<div class="press"></div>
 			</div>
 			<div class="nav-btn">
-					<div class="btn"><a href="{{site.baseurl}}/">Info</a></div>
-					<div class="btn"><a href="{{site.baseurl}}/tampotisk/">Tampotisk</a></div>
-					<div class="btn"><a href="{{site.baseurl}}/izdelki/">Izdelki</a></div>
-					<div class="btn"><a href="{{site.baseurl}}/pisite-nam/">Pišite nam</a></div>
+
+				<a href="{{site.baseurl}}/" class="{% if page.url == '/' %}current btn icon-home{% else %}btn icon-home{% endif %}"><span class="btn-name">Info</span></a>
+
+				<a href="{{site.baseurl}}/tampotisk/" class="{% if page.url == '/tampotisk/' %}current btn icon-tint{% else %}btn icon-tint{% endif %}"><span class="btn-name">Tampotisk</span></a>
+
+				<a href="{{site.baseurl}}/izdelki/" class="{% if page.url == '/izdelki/' %}current btn icon-gift{% else %}btn icon-gift{% endif %}"><span class="btn-name">Izdelki</span></a>
+
+				<a href="{{site.baseurl}}/pisite-nam/" class="{% if page.url == '/pisite-nam/' %}current btn icon-envelope{% else %}btn icon-envelope{% endif %}"><span class="btn-name">Pišite nam</span></a>
+
 			</div>
 		</div>
 	

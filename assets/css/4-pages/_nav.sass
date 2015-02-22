@@ -1,11 +1,9 @@
 h1
-	font-family: Open Sans
+	font-family: Tahoma
 	font-size: 48px
 	font-transform: uppercase
 	color: red
 
-p
-	color: green
 
 body
 	background:
@@ -17,6 +15,7 @@ header
 	.header-lock
 		width: 510px
 		margin: 50px auto 0
+		position: relative
     
 		.logo-plus
 			+display(flex)
@@ -32,32 +31,105 @@ header
 				background:
 					image: url(../img/press.png)
 				// box-shadow: 1px 1px 6px rgba(0,0,0,0.5)
-      
+ 
 		.nav-btn
-			display: inline-block
 			+display(flex)
 			+justify-content(space-between)
-
+			position: relative
+			margin: 0 auto
+			
 			.btn
 				+size(108px)
+				+box-sizing(border-box)
 				margin-top: 25px
-				background:
-					image: url(../img/transparent-test.png)
 				text-align: center
 				position: relative
 				box-shadow: 1px 1px 8px rgba(0,0,0,0.5)
+				color: #ffffff
 
-				a
-					font:
-						family: 'Open Sans', Arial
-						size: 12px
-						weight: 900
-					padding-top: 80px
-					position: absolute
-					left: 0
-					right: 0
-					color: white
-					text-transform: uppercase
-          
-					&:hover
-						color: rgba(255,255,255,0.7)
+				&:hover
+					text-shadow: 1px 1px 8px rgba(46,204,113,0.5) , -1px -1px 8px rgba(46,204,113,0.5) , 1px -1px 8px rgba(46,204,113,0.5) , -1px 1px 8px rgba(46,204,113,0.5)
+
+				&.icon-home
+					padding-top: 23px
+					background:
+						image: url(../img/podlaga-domov.png)
+					font-size: 40px
+
+				&.icon-tint
+					padding-top: 25px
+					background:
+						image: url(../img/podlaga-tampo.png)
+					font-size: 38px
+
+				&.icon-gift
+					padding-top: 21px		
+					padding-left: 8px
+					background:
+						image: url(../img/podlaga-izdelki.png)
+					font-size: 42px
+
+				&.icon-envelope
+					padding-top: 25px				
+					background:
+						image: url(../img/podlaga-pisite.png)	
+					font-size: 34px
+
+				&.current
+					text-shadow: 1px 1px 8px rgba(46,204,113,0.5) , -1px -1px 8px rgba(46,204,113,0.5) , 1px -1px 8px rgba(46,204,113,0.5) , -1px 1px 8px rgba(46,204,113,0.5)
+
+
+				// &:hover
+				// 	color: rgba(255,255,255,0.5)
+
+			.btn-name
+				position: absolute
+				bottom: 15px
+				left: 0
+				right: 0
+				font:
+					family: 'Tahoma'
+					size: 12px
+					weight: 700
+				text-transform: uppercase
+
+				// a
+				// 	font:
+				// 		family: 'Tahoma', sans serif
+				// 		size: 32px
+				// 		weight: 900
+				// 	padding-top: 80px
+				// 	position: absolute
+				// 	left: 0
+				// 	right: 0
+				// 	color: white
+				// 	text-transform: uppercase
+
+	// .nav-btn
+	// 	+size(108px)
+	// 	position: relative
+	// 	background: green
+	// 	margin: 0 auto
+	// 	+transition(300ms)
+
+	// 	.text
+	// 		height: 108px
+	// 		width: 108px
+	// 		position: relative
+	// 		left: 0
+	// 		color: white
+	// 		background-color: yellow
+
+	// 	.btn-name
+	// 		position: absolute
+	// 		bottom: 5px
+	// 		left: 0
+	// 		right: 0
+
+	// 	&:hover
+	// 		.text
+	// 			background-color: orange
+
+	// 		.btn-name
+	// 			color: blue
+	// 			text-shadow: 1px 1px 8px rgba(46,204,113,0.5) , -1px -1px 8px rgba(46,204,113,0.5) , 1px -1px 8px rgba(46,204,113,0.5) , -1px 1px 8px rgba(46,204,113,0.5)

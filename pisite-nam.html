@@ -5,8 +5,26 @@ layout: default
 <section>
 	
 	<div class="dobrodosli">
-		<div class="about"><p>Pišite nam kaj lepega.</p></div>
+		<!-- <div class="about"><p>Pišite nam kaj lepega.</p></div> -->
+
+		<form method="POST" action="//formspree.io/{{ site.data.portfolio.email }}">
+			<div class="contact-info">
+			  <label><span>Vaše Ime</span>
+		    <input type="text" name="name"></label>
+		    
+		    <label><span>Vaš E-mail</span>
+		    <input type="email" name="_replyto"></label>
+			</div>
+
+		    <label><span>Napišite nam kaj lepega</span>
+		    <textarea name="message"></textarea></label>
+			<div class="submit-wrap">
+		    <input type="submit" value="Pošlji">
+		  </div>
+		</form> 
 	</div>
+
+
 	
 <!-- 	<div class="kvadrat">
 		<a href="#" class="text"><img class="icon" src="assets/img/domov-hover.svg"><p><span class="btn-name">Text Sredinsko</span></p></a>
