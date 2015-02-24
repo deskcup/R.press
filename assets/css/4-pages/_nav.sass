@@ -22,9 +22,12 @@ header
 
 			.logo
 				+size(108px)
+				+box-sizing(border-box)
+				border: 7px solid rgba(76,76,76,0.90)
 				background:
 					image: url(../img/logo.png)
-				box-shadow: 1px 1px 8px rgba(0,0,0,0.5)
+					origin: border-box
+				// box-shadow: 1px 1px 8px rgba(0,0,0,0.5)
 
 			.press
 				width: 323px
@@ -39,54 +42,54 @@ header
 			margin: 0 auto
 
 			.current
-				text-shadow: 1px 1px 8px rgba(46,204,113,0.5), -1px -1px 8px rgba(46,204,113,0.5), 1px -1px 8px rgba(46,204,113,0.5), -1px 1px 8px rgba(46,204,113,0.5)
+				text-shadow: 1px 1px 8px rgba(255,255,255,0.6), -1px -1px 8px rgba(255,255,255,0.6), 1px -1px 8px rgba(255,255,255,0.6), -1px 1px 8px rgba(255,255,255,0.6)
 			
 			.btn
 				+size(108px)
 				+box-sizing(border-box)
+				border: 3px solid rgba(153,51,255,0.0)
 				margin-top: 25px
 				text-align: center
 				position: relative
-				box-shadow: 1px 1px 8px rgba(0,0,0,0.5)
-				color: #ffffff
+				// box-shadow: 1px 1px 8px rgba(0,0,0,0.5)
+				color: #4C4C4C
+				background:
+					color: rgba(153,51,255,0.2)
 
 				&:hover
-					text-shadow: 1px 1px 8px rgba(46,204,113,0.5), -1px -1px 8px rgba(46,204,113,0.5), 1px -1px 8px rgba(46,204,113,0.5), -1px 1px 8px rgba(46,204,113,0.5)
+					text-shadow: 1px 1px 8px rgba(255,255,255,0.6), -1px -1px 8px rgba(255,255,255,0.6), 1px -1px 8px rgba(255,255,255,0.6), -1px 1px 8px rgba(255,255,255,0.6)
+					border: 3px solid rgba(153,51,255,0.2)
 
 				&.icon-home
 					padding-top: 23px
-					background:
-						image: url(../img/podlaga-domov.png)
+						// image: url(../img/podlaga-domov.png)
 					font-size: 40px
 
 				&.icon-tint
 					padding-top: 25px
-					background:
-						image: url(../img/podlaga-tampo.png)
+						// image: url(../img/podlaga-tampo.png)
 					font-size: 38px
 
 				&.icon-gift
 					padding-top: 21px		
 					padding-left: 8px
-					background:
-						image: url(../img/podlaga-izdelki.png)
+						// image: url(../img/podlaga-izdelki.png)
 					font-size: 42px
 
 				&.icon-envelope
 					padding-top: 25px				
-					background:
-						image: url(../img/podlaga-pisite.png)	
+						// image: url(../img/podlaga-pisite.png)	
 					font-size: 34px
 
 				.btn-name
 					position: absolute
-					bottom: 23px
+					bottom: 20px
 					left: 0
 					right: 0
 					font:
 						family: 'Tahoma'
 						size: 12px
-						weight: 700
+						weight: 600
 					text-transform: uppercase
 
 		.tint-1
@@ -94,7 +97,7 @@ header
 			display: block
 			position: absolute
 			+size(154px)
-			top: 590px
+			top: 200px
 			left: -200px
 			cursor: pointer
 
