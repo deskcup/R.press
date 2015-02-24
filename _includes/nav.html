@@ -1,5 +1,23 @@
-<nav>
-	<li><a href="{{site.baseurl}}/">Domov</a></li>
-		<li><a href="{{site.baseurl}}/izdelki/">Izdelki</a></li>
-	<li><a href="{{site.baseurl}}/tampotisk/">Tampotisk</a></li>
-</nav>
+		<div class="header-lock">
+			<div class="logo-plus">
+				<div class="logo"></div>
+				<div class="press"></div>
+			</div>
+			<div class="nav-btn">
+				<a href="{{site.baseurl}}/" class="{% if page.url == '/' %}current btn icon-home{% else %}btn icon-home{% endif %}"><span class="btn-name">Domov</span></a>
+
+				<a href="{{site.baseurl}}/tampotisk/" class="{% if page.url == '/tampotisk/' %}current btn icon-tint{% else %}btn icon-tint{% endif %}"><span class="btn-name">Tampotisk</span></a>
+
+				<a href="{{site.baseurl}}/izdelki/" class="{% if page.url == '/izdelki/' %}current btn icon-gift{% else %}btn icon-gift{% endif %}"><span class="btn-name">Izdelki</span></a>
+
+				<a href="{{site.baseurl}}/pisite/" class="{% if page.url == '/pisite/' %}current btn icon-envelope{% else %}btn icon-envelope{% endif %}"><span class="btn-name">Pišite</span></a>
+			</div>
+			<div>
+				<img src="{{site.baseurl}}/assets/img/col-tint-1.png" class="tint-1">
+			</div>
+			<div>
+				<img src="{{site.baseurl}}/assets/img/col-tint-2.png" class="tint-2">
+			<div>
+				<img src="{{site.baseurl}}/assets/img/col-tint-3.png" class="tint-3" class="tint-3">
+			</div>
+		</div>

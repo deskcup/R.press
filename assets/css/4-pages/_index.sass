@@ -2,25 +2,35 @@ section
 	text-align: center
 	position: relative
 
-	.test
-		font-size: 48px
-		text-shadow: 1px 1px 0 #2ecc71 , -1px -1px 0 #2ecc71 , 1px -1px 0 #2ecc71 , -1px 1px 0 #2ecc71 
-
-		&:hover
-			text-shadow: 1px 1px 8px rgba(46,204,113,0.5) , -1px -1px 8px rgba(46,204,113,0.5) , 1px -1px 8px rgba(46,204,113,0.5) , -1px 1px 8px rgba(46,204,113,0.5)
-
 	.dobrodosli
-		display: block
-		margin: 25px auto
+		+display(flex)
 		+size(510px)
+		+flex-wrap(wrap)
+		margin: 25px auto
+		font-family: 'Tahoma'
+		font-size: 14px
+		color: #ffffff
 		background-image: url(../img/podlaga-body.png)
 		box-shadow: 1px 1px 8px rgba(0,0,0,0.5) 
-
+		
 		.about
-			padding: 50px
+			width: 100%
+			text-align: justify
+			padding: 40px 40px 0px
+			margin: 0 auto
 
-p
-	font-family: 'Tahoma'
-	font-transform: uppercase
-	font-size: 20px
-	color: #ffffff
+		.info
+			width: 100%
+			position: relative
+			padding: 20px 40px 40px
+			+display(flex)
+			+justify-content(space-between)
+			+align-items(flex-end)
+	
+			.podjetje
+				text-align: left
+
+			.telefon
+				text-align: right
+
+
