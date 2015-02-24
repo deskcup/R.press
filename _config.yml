@@ -1,5 +1,5 @@
 markdown: redcarpet
-baseurl: /R.press
+baseurl: deskcup.github.io
 exclude: ['README.md']
 permalink: pretty
 
