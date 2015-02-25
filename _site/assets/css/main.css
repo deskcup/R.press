@@ -323,7 +323,7 @@ header .header-lock {
       margin-top: 25px;
       text-align: center;
       position: relative;
-      color: rgba(76, 76, 76, 0.8);
+      color: rgba(76, 76, 76, 0.7);
       background-color: rgba(153, 51, 255, 0.2); }
       header .header-lock .nav-btn .btn:hover {
         color: rgba(86, 29, 142, 0.8);
@@ -351,7 +351,7 @@ header .header-lock {
         font-weight: 600;
         text-transform: uppercase; }
     header .header-lock .nav-btn .current {
-      color: rgba(86, 29, 142, 0.8); }
+      color: rgba(86, 29, 142, 0.9); }
   header .header-lock .tint-1 {
     z-index: 1;
     display: block;
@@ -408,9 +408,12 @@ section {
     background-color: rgba(153, 51, 255, 0.2); }
     section .dobrodosli .about {
       width: 100%;
-      text-align: justify;
-      padding: 40px 40px 0px;
+      text-align: left;
+      padding: 30px 40px 0px;
       margin: 0 auto; }
+      section .dobrodosli .about span {
+        display: block;
+        margin-bottom: 7px; }
     section .dobrodosli .info {
       width: 100%;
       position: relative;
