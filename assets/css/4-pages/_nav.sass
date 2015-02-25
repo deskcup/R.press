@@ -10,7 +10,6 @@ body
 		image: url(../img/blago.jpg)
 
 header
-	// background: #ccc
   
 	.header-lock
 		width: 510px
@@ -19,21 +18,18 @@ header
     
 		.logo-plus
 			+display(flex)
+			height: 108px
 
 			.logo
 				+size(108px)
 				+box-sizing(border-box)
-				border: 7px solid rgba(76,76,76,0.90)
-				background:
-					image: url(../img/logo.png)
-					origin: border-box
-				// box-shadow: 1px 1px 8px rgba(0,0,0,0.5)
+				path
+					fill: rgba(153,51,255,0.25)
 
 			.press
 				width: 323px
-				background:
-					image: url(../img/press.png)
-				// box-shadow: 1px 1px 6px rgba(0,0,0,0.5)
+				path
+					fill: rgba(153,51,255,0.25)
  
 		.nav-btn
 			+display(flex)
@@ -41,9 +37,6 @@ header
 			position: relative
 			margin: 0 auto
 
-			.current
-				text-shadow: 1px 1px 8px rgba(255,255,255,0.6), -1px -1px 8px rgba(255,255,255,0.6), 1px -1px 8px rgba(255,255,255,0.6), -1px 1px 8px rgba(255,255,255,0.6)
-			
 			.btn
 				+size(108px)
 				+box-sizing(border-box)
@@ -57,28 +50,24 @@ header
 					color: rgba(153,51,255,0.2)
 
 				&:hover
-					text-shadow: 1px 1px 8px rgba(255,255,255,0.6), -1px -1px 8px rgba(255,255,255,0.6), 1px -1px 8px rgba(255,255,255,0.6), -1px 1px 8px rgba(255,255,255,0.6)
+					color: rgba(86,29,142,0.8)				
 					border: 3px solid rgba(153,51,255,0.2)
 
 				&.icon-home
 					padding-top: 23px
-						// image: url(../img/podlaga-domov.png)
 					font-size: 40px
 
 				&.icon-tint
 					padding-top: 25px
-						// image: url(../img/podlaga-tampo.png)
 					font-size: 38px
 
 				&.icon-gift
 					padding-top: 21px		
 					padding-left: 8px
-						// image: url(../img/podlaga-izdelki.png)
 					font-size: 42px
 
 				&.icon-envelope
 					padding-top: 25px				
-						// image: url(../img/podlaga-pisite.png)	
 					font-size: 34px
 
 				.btn-name
@@ -91,6 +80,10 @@ header
 						size: 12px
 						weight: 600
 					text-transform: uppercase
+			
+			.current
+				color: rgba(86,29,142,0.8)
+				
 
 		.tint-1
 			z-index: 1
@@ -99,7 +92,6 @@ header
 			+size(154px)
 			top: 200px
 			left: -200px
-			cursor: pointer
 
 		.tint-2
 			z-index: 1
@@ -108,13 +100,11 @@ header
 			+size(64px)
 			top: 150px
 			left: 550px
-			cursor: pointer
 		
 		.tint-3
 			z-index: 1
 			display: block
 			position: absolute
-			+size(59px)
+			+size(70px)
 			top: 440px
 			left: -100px
-			cursor: pointer

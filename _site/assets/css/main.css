@@ -280,19 +280,20 @@ header .header-lock {
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    height: 108px; }
     header .header-lock .logo-plus .logo {
       height: 108px;
       width: 108px;
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
-      box-sizing: border-box;
-      border: 7px solid rgba(76, 76, 76, 0.9);
-      background-image: url(../img/logo.png);
-      background-origin: border-box; }
+      box-sizing: border-box; }
+      header .header-lock .logo-plus .logo path {
+        fill: rgba(153, 51, 255, 0.25); }
     header .header-lock .logo-plus .press {
-      width: 323px;
-      background-image: url(../img/press.png); }
+      width: 323px; }
+      header .header-lock .logo-plus .press path {
+        fill: rgba(153, 51, 255, 0.25); }
   header .header-lock .nav-btn {
     display: -webkit-box;
     display: -moz-box;
@@ -312,8 +313,6 @@ header .header-lock {
     -ms-flex-pack: justify;
     position: relative;
     margin: 0 auto; }
-    header .header-lock .nav-btn .current {
-      text-shadow: 1px 1px 8px rgba(255, 255, 255, 0.6), -1px -1px 8px rgba(255, 255, 255, 0.6), 1px -1px 8px rgba(255, 255, 255, 0.6), -1px 1px 8px rgba(255, 255, 255, 0.6); }
     header .header-lock .nav-btn .btn {
       height: 108px;
       width: 108px;
@@ -327,7 +326,7 @@ header .header-lock {
       color: #4C4C4C;
       background-color: rgba(153, 51, 255, 0.2); }
       header .header-lock .nav-btn .btn:hover {
-        text-shadow: 1px 1px 8px rgba(255, 255, 255, 0.6), -1px -1px 8px rgba(255, 255, 255, 0.6), 1px -1px 8px rgba(255, 255, 255, 0.6), -1px 1px 8px rgba(255, 255, 255, 0.6);
+        color: rgba(86, 29, 142, 0.8);
         border: 3px solid rgba(153, 51, 255, 0.2); }
       header .header-lock .nav-btn .btn.icon-home {
         padding-top: 23px;
@@ -351,6 +350,8 @@ header .header-lock {
         font-size: 12px;
         font-weight: 600;
         text-transform: uppercase; }
+    header .header-lock .nav-btn .current {
+      color: rgba(86, 29, 142, 0.8); }
   header .header-lock .tint-1 {
     z-index: 1;
     display: block;
@@ -358,8 +359,7 @@ header .header-lock {
     height: 154px;
     width: 154px;
     top: 200px;
-    left: -200px;
-    cursor: pointer; }
+    left: -200px; }
   header .header-lock .tint-2 {
     z-index: 1;
     display: none;
@@ -367,17 +367,15 @@ header .header-lock {
     height: 64px;
     width: 64px;
     top: 150px;
-    left: 550px;
-    cursor: pointer; }
+    left: 550px; }
   header .header-lock .tint-3 {
     z-index: 1;
     display: block;
     position: absolute;
-    height: 59px;
-    width: 59px;
+    height: 70px;
+    width: 70px;
     top: 440px;
-    left: -100px;
-    cursor: pointer; }
+    left: -100px; }
 
 section {
   text-align: center;
@@ -417,6 +415,7 @@ section {
       width: 100%;
       position: relative;
       padding: 20px 40px 40px;
+      font-size: 14px;
       display: -webkit-box;
       display: -moz-box;
       display: box;
