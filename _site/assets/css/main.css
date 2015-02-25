@@ -323,7 +323,7 @@ header .header-lock {
       margin-top: 25px;
       text-align: center;
       position: relative;
-      color: #4C4C4C;
+      color: rgba(76, 76, 76, 0.8);
       background-color: rgba(153, 51, 255, 0.2); }
       header .header-lock .nav-btn .btn:hover {
         color: rgba(86, 29, 142, 0.8);
