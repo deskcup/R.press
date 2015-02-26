@@ -326,7 +326,7 @@ header .header-lock {
       color: rgba(76, 76, 76, 0.7);
       background-color: rgba(153, 51, 255, 0.2); }
       header .header-lock .nav-btn .btn:hover {
-        color: rgba(86, 29, 142, 0.8);
+        color: rgba(86, 29, 142, 0.9);
         border: 3px solid rgba(153, 51, 255, 0.2); }
       header .header-lock .nav-btn .btn.icon-home {
         padding-top: 23px;
