@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700&subset=latin,latin-ext);
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -147,9 +149,41 @@ td, th {
   font-style: normal;
   font-weight: 400;
   src: local("Open Sans"), local("OpenSans"), url(//themes.googleusercontent.com/static/fonts/opensans/v8/cJZKeOuBrn4kERxqtaUH3bO3LdcAZYWl9Si6vvxL-qU.woff) format("woff"); }
+@font-face {
+  font-family: 'icomoon';
+  src: url("fonts/icomoon.eot"); }
+@font-face {
+  font-family: 'icomoon';
+  src: url(data:application/x-font-ttf;charset=utf-8;base64,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) format("truetype"), url(data:application/font-woff;charset=utf-8;base64,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) format("woff");
+  font-weight: normal;
+  font-style: normal; }
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-home:before {
+  content: "\f015"; }
+
+.icon-tint:before {
+  content: "\f043"; }
+
+.icon-gift:before {
+  content: "\f06b"; }
+
+.icon-envelope:before {
+  content: "\f0e0"; }
+
 .gigantic, .huge, .large, .bigger, .big,
 h1, h2, h3, h4, h5, h6 {
-  color: #bd5248;
+  color: #BD5248;
   font-weight: bold; }
 
 .gigantic {
@@ -188,14 +222,14 @@ strong {
   font-weight: bold; }
 
 hr {
-  border: solid #dddddd;
+  border: solid #ddd;
   border-width: 1px 0 0;
   clear: both;
   margin: 10px 0 30px;
   height: 0; }
 
 a {
-  color: #bd5248;
+  color: #BD5248;
   text-decoration: none;
   outline: 0; }
 
@@ -203,10 +237,10 @@ a:hover, a:focus {
   color: #d89993; }
 
 ::selection {
-  background: #fff498; }
+  background: #FFF498; }
 
 ::-moz-selection {
-  background: #fff498; }
+  background: #FFF498; }
 
 img::selection {
   background: transparent; }
@@ -215,13 +249,267 @@ img::-moz-selection {
   background: transparent; }
 
 body {
-  -webkit-tap-highlight-color: #fff498; }
+  -webkit-tap-highlight-color: #FFF498; }
 
 body {
-  background: #f6f6f8;
+  background: #F6F6F8;
   font-size: 14px;
   line-height: 1.6;
   font-family: "Open Sans" sans-serif;
-  color: #2e2d33;
+  color: #2E2D33;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%; }
+
+h1 {
+  font-family: Tahoma;
+  font-size: 48px;
+  font-transform: uppercase;
+  color: red; }
+
+body {
+  background-image: url(../img/blago.jpg); }
+
+header .header-lock {
+  width: 510px;
+  margin: 50px auto 0;
+  position: relative; }
+  header .header-lock .logo-plus {
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 108px; }
+    header .header-lock .logo-plus .logo {
+      height: 108px;
+      width: 108px;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box; }
+      header .header-lock .logo-plus .logo path {
+        fill: rgba(153, 51, 255, 0.25); }
+    header .header-lock .logo-plus .press {
+      width: 323px; }
+      header .header-lock .logo-plus .press path {
+        fill: rgba(153, 51, 255, 0.25); }
+  header .header-lock .nav-btn {
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    -o-justify-content: space-between;
+    justify-content: space-between;
+    -ms-flex-pack: justify;
+    position: relative;
+    margin: 0 auto; }
+    header .header-lock .nav-btn .btn {
+      height: 108px;
+      width: 108px;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      border: 3px solid rgba(153, 51, 255, 0);
+      margin-top: 25px;
+      text-align: center;
+      position: relative;
+      color: rgba(76, 76, 76, 0.7);
+      background-color: rgba(153, 51, 255, 0.2); }
+      header .header-lock .nav-btn .btn:hover {
+        color: rgba(86, 29, 142, 0.9);
+        border: 3px solid rgba(153, 51, 255, 0.2); }
+      header .header-lock .nav-btn .btn.icon-home {
+        padding-top: 23px;
+        font-size: 40px; }
+      header .header-lock .nav-btn .btn.icon-tint {
+        padding-top: 25px;
+        font-size: 38px; }
+      header .header-lock .nav-btn .btn.icon-gift {
+        padding-top: 21px;
+        padding-left: 8px;
+        font-size: 42px; }
+      header .header-lock .nav-btn .btn.icon-envelope {
+        padding-top: 25px;
+        font-size: 34px; }
+      header .header-lock .nav-btn .btn .btn-name {
+        position: absolute;
+        bottom: 20px;
+        left: 0;
+        right: 0;
+        font-family: "Tahoma";
+        font-size: 12px;
+        font-weight: 600;
+        text-transform: uppercase; }
+    header .header-lock .nav-btn .current {
+      color: rgba(86, 29, 142, 0.9); }
+  header .header-lock .tint-1 {
+    z-index: 1;
+    display: block;
+    position: absolute;
+    height: 154px;
+    width: 154px;
+    top: 200px;
+    left: -200px; }
+  header .header-lock .tint-2 {
+    z-index: 1;
+    display: none;
+    position: absolute;
+    height: 64px;
+    width: 64px;
+    top: 150px;
+    left: 550px; }
+  header .header-lock .tint-3 {
+    z-index: 1;
+    display: block;
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    top: 440px;
+    left: -100px; }
+
+section {
+  text-align: center;
+  position: relative; }
+  section .dobrodosli {
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 510px;
+    width: 510px;
+    -webkit-box-lines: multiple;
+    -moz-box-lines: multiple;
+    box-lines: multiple;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 25px auto;
+    font-family: "Tahoma";
+    font-weight: 500;
+    font-size: 16px;
+    color: #4C4C4C;
+    background-color: rgba(153, 51, 255, 0.2); }
+    section .dobrodosli .about {
+      width: 100%;
+      text-align: left;
+      padding: 30px 40px 0px;
+      margin: 0 auto; }
+      section .dobrodosli .about span {
+        display: block;
+        margin-bottom: 7px; }
+    section .dobrodosli .info {
+      width: 100%;
+      position: relative;
+      padding: 20px 40px 40px;
+      font-size: 14px;
+      display: -webkit-box;
+      display: -moz-box;
+      display: box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -moz-box-pack: justify;
+      box-pack: justify;
+      -webkit-justify-content: space-between;
+      -moz-justify-content: space-between;
+      -ms-justify-content: space-between;
+      -o-justify-content: space-between;
+      justify-content: space-between;
+      -ms-flex-pack: justify;
+      -webkit-box-align: end;
+      -moz-box-align: end;
+      box-align: end;
+      -webkit-align-items: flex-end;
+      -moz-align-items: flex-end;
+      -ms-align-items: flex-end;
+      -o-align-items: flex-end;
+      align-items: flex-end;
+      -ms-flex-align: end; }
+      section .dobrodosli .info .podjetje {
+        text-align: left; }
+      section .dobrodosli .info .telefon {
+        text-align: right; }
+
+.about {
+  padding: 10px; }
+
+.dobrodosli {
+  max-width: 510px;
+  position: relative; }
+  .dobrodosli form {
+    max-width: 450px;
+    margin: 0 auto 50px; }
+    .dobrodosli form input, .dobrodosli form textarea {
+      text-align: left;
+      background-color: rgba(255, 255, 255, 0.3);
+      color: #4C4C4C;
+      border: 3px solid rgba(255, 255, 255, 0.4);
+      width: 100%;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      padding: 10px; }
+      .dobrodosli form input:focus, .dobrodosli form textarea:focus {
+        outline: none;
+        border-color: rgba(153, 51, 255, 0.3); }
+    .dobrodosli form textarea {
+      height: 15em; }
+    .dobrodosli form .submit-wrap {
+      text-align: right; }
+    .dobrodosli form [type="submit"] {
+      color: #4C4C4C;
+      background: rgba(255, 255, 255, 0.1);
+      text-align: center;
+      font-size: 18px;
+      font-weight: 400;
+      text-transform: uppercase;
+      width: 33%; }
+      .dobrodosli form [type="submit"]:hover {
+        background: rgba(255, 255, 255, 0.8);
+        border: 3px solid rgba(153, 51, 255, 0.45);
+        color: #4C4C4C; }
+    .dobrodosli form .contact-info {
+      width: 430px;
+      padding-top: 35px; }
+      .dobrodosli form .contact-info label {
+        width: 50%;
+        float: left;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box; }
+        .dobrodosli form .contact-info label:nth-child(1) {
+          padding-right: 10px; }
+        .dobrodosli form .contact-info label:nth-child(2) {
+          padding-left: 10px; }
+    .dobrodosli form label {
+      color: #4C4C4C;
+      font-family: "Tahoma";
+      font-weight: 400;
+      text-align: left;
+      display: block;
+      margin-bottom: 20px;
+      margin-top: 0px; }
+      .dobrodosli form label span {
+        font-size: 16px;
+        display: block;
+        padding-bottom: 5px;
+        font-weight: 400; }
