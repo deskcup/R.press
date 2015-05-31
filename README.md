@@ -1,2 +1,2 @@
-# R.press
+R.press
 Company webpage
