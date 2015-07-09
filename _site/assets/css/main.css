@@ -443,14 +443,14 @@ body {
   border: 8px solid #3e3b34;
   padding: 40px;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 400;
   background: rgba(190, 184, 168, 0.5); }
   .tekst .opis span {
     display: block;
     margin-bottom: 10px; }
   .tekst .info {
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 400;
     display: -webkit-box;
     display: -moz-box;
     display: box;
@@ -544,17 +544,16 @@ body {
       -ms-flex-align: end;
       margin-top: 15px;
       font-size: 15px;
-      font-weight: 600; }
+      font-weight: 400; }
       .tekst .info .podpis {
         width: 100%;
         text-align: left;
-        font-size: 15px;
-        font-weight: 600; }
+        font-size: 15px; }
       .tekst .info .info-levo {
         margin-top: 10px;
         text-align: left; }
       .tekst .info .info-desno {
-        margin: 10px 0 auto auto;
+        margin: 10px 0 0 auto;
         text-align: right; } }
 .top-rule, .bottom-rule {
   display: none;
@@ -573,7 +572,7 @@ body {
   padding-bottom: 40px;
   border: 8px solid #3e3b34;
   font-family: "Open sans";
-  font-weight: 600;
+  font-weight: 400;
   font-size: 16px;
   color: #4C4C4C;
   background: rgba(190, 184, 168, 0.5);
@@ -607,7 +606,7 @@ form {
     background: rgba(255, 255, 255, 0);
     text-align: center;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 400;
     text-transform: uppercase;
     width: 25%; }
     form [type="submit"]:hover {
@@ -640,7 +639,7 @@ form {
       font-size: 14px;
       display: block;
       padding-bottom: 5px;
-      font-weight: 600; }
+      font-weight: 400; }
 
 @media (max-width: 540px) {
   .top-rule {
@@ -659,7 +658,7 @@ form {
     position: relative;
     border: 0px solid #3e3b34;
     font-family: "Open sans";
-    font-weight: 600;
+    font-weight: 400;
     font-size: 18px; }
 
   form {
@@ -677,14 +676,14 @@ form {
       color: #4C4C4C;
       font-family: "Open sans";
       font-weight: 400;
-      font-size: 16px;
+      font-size: 14px;
       text-transform: uppercase;
       text-align: left;
       display: block;
       margin-bottom: 20px;
       margin-top: 0px; }
       form label span {
-        font-size: 16px;
+        font-size: 14px;
         display: block;
         margin-top: 0px;
         padding-bottom: 4px;
