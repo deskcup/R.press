@@ -295,7 +295,7 @@ body {
     height: auto;
     margin: 0 auto;
     position: relative; } }
-.nav-test {
+.wrap-nav {
   display: -webkit-box;
   display: -moz-box;
   display: box;
@@ -324,7 +324,7 @@ body {
   margin: 10px auto 24px;
   height: 180px;
   width: 510px; }
-  .nav-test .logo {
+  .wrap-nav .logo {
     background-position: 50% 50%, 50% 50%;
     background-image: url(../img/logo.svg), url(../img/logo-bg.svg);
     background-size: contain, contain;
@@ -338,7 +338,7 @@ body {
     box-sizing: border-box;
     border: 12px solid #3e3b34;
     vertical-align: center; }
-  .nav-test .pisite {
+  .wrap-nav .btn-mail {
     position: relative;
     background: #beb8a8;
     fill: #3e3b34;
@@ -352,13 +352,13 @@ body {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     border: 4px solid #3e3b34; }
-    .nav-test .pisite:hover {
+    .wrap-nav .btn-mail:hover {
       color: #3e3b34;
       border: 4px solid #A5FFD6; }
-    .nav-test .pisite.icon-envelope {
+    .wrap-nav .btn-mail.icon-envelope {
       padding-top: 4px;
       font-size: 24px; }
-    .nav-test .pisite .btn-name {
+    .wrap-nav .btn-mail .btn-name {
       position: absolute;
       bottom: 6px;
       left: 0;
@@ -367,10 +367,10 @@ body {
       font-size: 10px;
       font-weight: 700;
       text-transform: uppercase; }
-  .nav-test .current {
+  .wrap-nav .current {
     color: rgba(255, 255, 255, 0.4);
     border: 4px solid #A5FFD6; }
-  .nav-test p {
+  .wrap-nav p {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -381,16 +381,16 @@ body {
     transform: translate(-50%, -50%); }
 
 @media (max-width: 540px) {
-  .nav-test {
+  .wrap-nav {
     margin: 20px auto 16px;
     width: 100%;
     height: auto; }
-    .nav-test .logo {
+    .wrap-nav .logo {
       height: 120px;
       width: 120px;
       border: 10px solid #3e3b34;
       margin-left: 20px; }
-    .nav-test .pisite {
+    .wrap-nav .btn-mail {
       right: 20px;
       bottom: 0px;
       height: 54px;
@@ -400,16 +400,16 @@ body {
       -moz-box-sizing: border-box;
       box-sizing: border-box;
       border: 4px solid #3e3b34; }
-      .nav-test .pisite:hover {
+      .wrap-nav .btn-mail:hover {
         color: #3e3b34;
         border: 4px solid #A5FFD6; }
-      .nav-test .pisite.icon-envelope {
+      .wrap-nav .btn-mail.icon-envelope {
         padding-top: 5px;
         font-size: 23px; }
-      .nav-test .pisite .btn-name {
+      .wrap-nav .btn-mail .btn-name {
         bottom: 6px;
         font-size: 10px; }
-    .nav-test .current {
+    .wrap-nav .current {
       color: rgba(255, 255, 255, 0.4);
       border: 4px solid #A5FFD6; } }
 .top-rule, .bottom-rule {
@@ -419,7 +419,7 @@ body {
   max-width: 540px;
   background: #3e3b34; }
 
-.tekst {
+.wrap-home {
   display: -webkit-box;
   display: -moz-box;
   display: box;
@@ -445,10 +445,10 @@ body {
   font-size: 14px;
   font-weight: 600;
   background: rgba(190, 184, 168, 0.5); }
-  .tekst .opis span {
+  .wrap-home .about span {
     display: block;
     margin-bottom: 10px; }
-  .tekst .info {
+  .wrap-home .info {
     font-size: 14px;
     font-weight: 600;
     display: -webkit-box;
@@ -484,12 +484,12 @@ body {
     align-items: flex-end;
     -ms-flex-align: end;
     width: 100%; }
-    .tekst .info .podpis {
+    .wrap-home .info .podpis {
       text-align: right;
       width: 100%; }
-    .tekst .info .info-levo {
+    .wrap-home .info .info-levo {
       text-align: left; }
-    .tekst .info .info-desno {
+    .wrap-home .info .info-desno {
       text-align: right; }
 
 @media (max-width: 540px) {
@@ -501,7 +501,7 @@ body {
     display: block;
     margin: 0 20px 30px; }
 
-  .tekst {
+  .wrap-home {
     border: 0px solid #3e3b34;
     max-width: 540px;
     height: auto;
@@ -509,7 +509,7 @@ body {
     padding: 20px 30px 20px;
     font-size: 16px;
     text-align: left; }
-    .tekst .info {
+    .wrap-home .info {
       display: -webkit-box;
       display: -moz-box;
       display: box;
@@ -545,14 +545,14 @@ body {
       margin-top: 15px;
       font-size: 15px;
       font-weight: 600; }
-      .tekst .info .podpis {
+      .wrap-home .info .podpis {
         width: 100%;
         text-align: left;
         font-size: 15px; }
-      .tekst .info .info-levo {
+      .wrap-home .info .info-levo {
         margin-top: 10px;
         text-align: left; }
-      .tekst .info .info-desno {
+      .wrap-home .info .info-desno {
         margin: 10px 0 0 auto;
         text-align: right; } }
 .top-rule, .bottom-rule {
@@ -562,7 +562,7 @@ body {
   max-width: 540px;
   background: #3e3b34; }
 
-.dobrodosli {
+.wrap-mail {
   height: 510px;
   width: 510px;
   -webkit-box-sizing: border-box;
@@ -650,7 +650,7 @@ form {
     display: block;
     margin: 0 20px 30px; }
 
-  .dobrodosli {
+  .wrap-mail {
     display: block;
     width: 100%;
     height: auto;
