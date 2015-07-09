@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700&subset=latin-ext,latin);
 @import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700&subset=latin,latin-ext);
 html {
   font-family: sans-serif;
@@ -363,9 +363,9 @@ body {
       bottom: 6px;
       left: 0;
       right: 0;
-      font-family: "Open sans";
+      font-family: "Open Sans";
       font-size: 10px;
-      font-weight: 800;
+      font-weight: 700;
       text-transform: uppercase; }
   .nav-test .current {
     color: rgba(255, 255, 255, 0.4);
@@ -443,14 +443,14 @@ body {
   border: 8px solid #3e3b34;
   padding: 40px;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 600;
   background: rgba(190, 184, 168, 0.5); }
   .tekst .opis span {
     display: block;
     margin-bottom: 10px; }
   .tekst .info {
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 600;
     display: -webkit-box;
     display: -moz-box;
     display: box;
@@ -544,7 +544,7 @@ body {
       -ms-flex-align: end;
       margin-top: 15px;
       font-size: 15px;
-      font-weight: 400; }
+      font-weight: 600; }
       .tekst .info .podpis {
         width: 100%;
         text-align: left;
@@ -571,8 +571,8 @@ body {
   margin: 0px auto 0px;
   padding-bottom: 40px;
   border: 8px solid #3e3b34;
-  font-family: "Open sans";
-  font-weight: 400;
+  font-family: "Open Sans";
+  font-weight: 600;
   font-size: 16px;
   color: #4C4C4C;
   background: rgba(190, 184, 168, 0.5);
@@ -606,7 +606,7 @@ form {
     background: rgba(255, 255, 255, 0);
     text-align: center;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 600;
     text-transform: uppercase;
     width: 25%; }
     form [type="submit"]:hover {
@@ -627,8 +627,8 @@ form {
         padding-left: 10px; }
   form label {
     color: #4C4C4C;
-    font-family: "Open sans";
-    font-weight: 400;
+    font-family: "Open Sans";
+    font-weight: 600;
     font-size: 16px;
     text-transform: uppercase;
     text-align: left;
@@ -639,7 +639,7 @@ form {
       font-size: 14px;
       display: block;
       padding-bottom: 5px;
-      font-weight: 400; }
+      font-weight: 600; }
 
 @media (max-width: 540px) {
   .top-rule {
@@ -657,8 +657,8 @@ form {
     padding: 0 30px 0;
     position: relative;
     border: 0px solid #3e3b34;
-    font-family: "Open sans";
-    font-weight: 400;
+    font-family: "Open Sans";
+    font-weight: 600;
     font-size: 18px; }
 
   form {
@@ -674,8 +674,8 @@ form {
           padding: 0; }
     form label {
       color: #4C4C4C;
-      font-family: "Open sans";
-      font-weight: 400;
+      font-family: "Open Sans";
+      font-weight: 600;
       font-size: 14px;
       text-transform: uppercase;
       text-align: left;
