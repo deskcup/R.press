@@ -1,43 +1,86 @@
-section
-	text-align: center
-	position: relative
+.top-rule, .bottom-rule
+  display: none
+  margin: 0 auto 0
+  height: 6px
+  max-width: 540px
+  background: rgba(62, 59, 52,1)
 
-	.dobrodosli
-		+display(flex)
-		+size(510px)
-		+flex-wrap(wrap)
-		+box-sizing(border-box)
-		margin: 25px auto
-		font:
-			family: 'Tahoma'
-			weight: 500
-			size: 16px
-		color: #4C4C4C
-		background-color: rgba(153,51,255,0.2)
-		
-		.about
-			width: 100%
-			text-align: left
-			padding: 30px 40px 0px
-			margin: 0 auto
+.tekst
+  +display(flex)
+  +flex-wrap(wrap)
+  margin: 0 auto 0px
+  max-width: 510px
+  height: 510px
+  +box-sizing(border-box)
+  border: 8px solid rgba(62, 59, 52,1)
+  padding: 40px
+  font-size: 14px
+  font-weight: 600
+  background: rgba(190,184,168,0.5)
 
-			span
-				display: block
-				margin-bottom: 7px
+  .opis
+    span
+      display: block
+      margin-bottom: 10px
 
-		.info
-			width: 100%
-			position: relative
-			padding: 20px 40px 40px
-			font-size: 14px
-			+display(flex)
-			+justify-content(space-between)
-			+align-items(flex-end)
-	
-			.podjetje
-				text-align: left
+  .info
+    font-size: 14px
+    font-weight: 600
+    +display(flex)
+    +flex-wrap(wrap)
+    +justify-content(space-between)
+    +align-items(flex-end)
+    width: 100%
+    
+    .podpis
+      text-align: right
+      width: 100%
 
-			.telefon
-				text-align: right
+    .info-levo
+      text-align: left
 
+    .info-desno
+      text-align: right
 
+@media (max-width: 540px)
+
+  .top-rule
+    display: block
+    margin: 0 20px 0
+
+  .bottom-rule
+    display: block
+    margin: 0 20px 30px
+    
+  .tekst
+    border: 0px solid rgba(62, 59, 52,1)
+    max-width: 540px
+    height: auto
+    margin: 0px auto
+    padding: 30px
+    font-size: 16px
+    text-align: left
+
+    .info
+      +display(flex)
+      +flex-wrap(wrap)
+      +justify-content(space-between)
+      +align-items(flex-end)
+      margin-top: 15px
+      font-size: 15px
+      font-weight: 600
+      //display: block
+
+      .podpis
+        width: 100%
+        text-align: left
+        font-size: 15px
+        font-weight: 600
+      
+      .info-levo
+        margin-top: 10px
+        text-align: left
+
+      .info-desno
+        margin-top: 10px
+        text-align: right

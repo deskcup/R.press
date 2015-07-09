@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700);
 @import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700&subset=latin,latin-ext);
 html {
   font-family: sans-serif;
@@ -193,7 +193,9 @@ td, th {
 .gigantic, .huge, .large, .bigger, .big,
 h1, h2, h3, h4, h5, h6 {
   color: #BD5248;
-  font-weight: bold; }
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  text-align: center; }
 
 .gigantic {
   font-size: 110px;
@@ -222,7 +224,8 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.2; }
 
 p {
-  margin: 0 0 20px 0; }
+  margin: 0 0 20px 0;
+  font-family: "Open Sans", sans-serif; }
 
 em {
   font-style: italic; }
@@ -261,49 +264,193 @@ body {
   -webkit-tap-highlight-color: #FFF498; }
 
 body {
-  background: #F6F6F8;
+  background-image: url(..//img/bg.png);
+  background-repeat: repeat;
+  background-size: 100px auto;
   font-size: 14px;
   line-height: 1.6;
-  font-family: "Open Sans" sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #2E2D33;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%; }
 
-h1 {
-  font-family: Tahoma;
-  font-size: 48px;
-  font-transform: uppercase;
-  color: red; }
-
-body {
-  background-image: url(../img/blago.jpg); }
-
-header .header-lock {
+.centering {
+  margin: auto;
   width: 510px;
-  margin: 50px auto 0;
-  position: relative; }
-  header .header-lock .logo-plus {
-    display: -webkit-box;
-    display: -moz-box;
-    display: box;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flexbox;
-    display: flex;
-    height: 108px; }
-    header .header-lock .logo-plus .logo {
-      height: 108px;
-      width: 108px;
+  height: 720px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0; }
+
+@media (max-width: 540px) {
+  body {
+    background-image: url(..//img/bg.png);
+    background-repeat: repeat;
+    background-size: 120px auto; }
+
+  .centering {
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    position: relative; } }
+.nav-test {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -o-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: justify;
+  -webkit-box-align: end;
+  -moz-box-align: end;
+  box-align: end;
+  -webkit-align-items: flex-end;
+  -moz-align-items: flex-end;
+  -ms-align-items: flex-end;
+  -o-align-items: flex-end;
+  align-items: flex-end;
+  -ms-flex-align: end;
+  margin: 10px auto 24px;
+  height: 180px;
+  width: 510px; }
+  .nav-test .logo {
+    background-position: 50% 50%, 50% 50%;
+    background-image: url(../img/logo.svg), url(../img/logo-bg.svg);
+    background-size: contain, contain;
+    fill: #3e3b34;
+    position: relative;
+    height: 180px;
+    width: 180px;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 12px solid #3e3b34;
+    vertical-align: center; }
+  .nav-test .pisite {
+    position: relative;
+    background: #beb8a8;
+    fill: #3e3b34;
+    color: #3e3b34;
+    right: 0px;
+    bottom: 0px;
+    height: 54px;
+    width: 54px;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 4px solid #3e3b34; }
+    .nav-test .pisite:hover {
+      color: #3e3b34;
+      border: 4px solid #A5FFD6; }
+    .nav-test .pisite.icon-envelope {
+      padding-top: 4px;
+      font-size: 24px; }
+    .nav-test .pisite .btn-name {
+      position: absolute;
+      bottom: 5px;
+      left: 0;
+      right: 0;
+      font-family: "Open sans";
+      font-size: 10px;
+      font-weight: 800;
+      text-transform: uppercase; }
+  .nav-test .current {
+    color: rgba(255, 255, 255, 0.4);
+    border: 4px solid #A5FFD6; }
+  .nav-test p {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+
+@media (max-width: 540px) {
+  .nav-test {
+    margin: 20px auto 16px;
+    width: 100%;
+    height: auto; }
+    .nav-test .logo {
+      height: 120px;
+      width: 120px;
+      border: 10px solid #3e3b34;
+      margin-left: 20px; }
+    .nav-test .pisite {
+      right: 20px;
+      bottom: 0px;
+      height: 54px;
+      width: 54px;
+      text-align: center;
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
-      box-sizing: border-box; }
-      header .header-lock .logo-plus .logo path {
-        fill: rgba(153, 51, 255, 0.25); }
-    header .header-lock .logo-plus .press {
-      width: 323px; }
-      header .header-lock .logo-plus .press path {
-        fill: rgba(153, 51, 255, 0.25); }
-  header .header-lock .nav-btn {
+      box-sizing: border-box;
+      border: 4px solid #3e3b34; }
+      .nav-test .pisite:hover {
+        color: #3e3b34;
+        border: 4px solid #A5FFD6; }
+      .nav-test .pisite.icon-envelope {
+        padding-top: 5px;
+        font-size: 20px; }
+      .nav-test .pisite .btn-name {
+        bottom: 5px;
+        font-size: 9px; }
+    .nav-test .current {
+      color: rgba(255, 255, 255, 0.4);
+      border: 4px solid #A5FFD6; } }
+.top-rule, .bottom-rule {
+  display: none;
+  margin: 0 auto 0;
+  height: 6px;
+  max-width: 540px;
+  background: #3e3b34; }
+
+.tekst {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 auto 0px;
+  max-width: 510px;
+  height: 510px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 8px solid #3e3b34;
+  padding: 40px;
+  font-size: 14px;
+  font-weight: 600;
+  background: rgba(190, 184, 168, 0.5); }
+  .tekst .opis span {
+    display: block;
+    margin-bottom: 10px; }
+  .tekst .info {
+    font-size: 14px;
+    font-weight: 600;
     display: -webkit-box;
     display: -moz-box;
     display: box;
@@ -311,6 +458,13 @@ header .header-lock {
     display: -moz-flex;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-lines: multiple;
+    -moz-box-lines: multiple;
+    box-lines: multiple;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     -webkit-box-pack: justify;
     -moz-box-pack: justify;
     box-pack: justify;
@@ -320,118 +474,42 @@ header .header-lock {
     -o-justify-content: space-between;
     justify-content: space-between;
     -ms-flex-pack: justify;
-    position: relative;
-    margin: 0 auto; }
-    header .header-lock .nav-btn .btn {
-      height: 108px;
-      width: 108px;
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      box-sizing: border-box;
-      border: 3px solid rgba(153, 51, 255, 0);
-      margin-top: 23px;
-      text-align: center;
-      position: relative;
-      border-radius: 100%;
-      color: rgba(76, 76, 76, 0.7);
-      background-color: rgba(153, 51, 255, 0.2);
-      padding-top: 24px;
-      font-size: 32px; }
-      header .header-lock .nav-btn .btn:hover {
-        color: rgba(86, 29, 142, 0.9);
-        border: 3px solid rgba(153, 51, 255, 0.2); }
-      header .header-lock .nav-btn .btn.icon-home {
-        padding-top: 20px;
-        font-size: 40px; }
-      header .header-lock .nav-btn .btn.icon-tint {
-        padding-top: 22px;
-        font-size: 38px; }
-      header .header-lock .nav-btn .btn.icon-gift {
-        padding-top: 18px;
-        padding-left: 8px;
-        font-size: 42px; }
-      header .header-lock .nav-btn .btn.icon-envelope {
-        padding-top: 23px;
-        font-size: 32px; }
-      header .header-lock .nav-btn .btn .btn-name {
-        position: absolute;
-        bottom: 26px;
-        left: 0;
-        right: 0;
-        font-family: "Tahoma";
-        font-size: 12px;
-        font-weight: 600;
-        text-transform: uppercase; }
-    header .header-lock .nav-btn .current {
-      color: rgba(86, 29, 142, 0.9);
-      border: 3px solid rgba(153, 51, 255, 0.2); }
-  header .header-lock .tint-1 {
-    z-index: 1;
-    display: block;
-    position: absolute;
-    height: 154px;
-    width: 154px;
-    top: 200px;
-    left: -200px; }
-  header .header-lock .tint-2 {
-    z-index: 1;
-    display: none;
-    position: absolute;
-    height: 64px;
-    width: 64px;
-    top: 150px;
-    left: 550px; }
-  header .header-lock .tint-3 {
-    z-index: 1;
-    display: block;
-    position: absolute;
-    height: 70px;
-    width: 70px;
-    top: 440px;
-    left: -100px; }
+    -webkit-box-align: end;
+    -moz-box-align: end;
+    box-align: end;
+    -webkit-align-items: flex-end;
+    -moz-align-items: flex-end;
+    -ms-align-items: flex-end;
+    -o-align-items: flex-end;
+    align-items: flex-end;
+    -ms-flex-align: end;
+    width: 100%; }
+    .tekst .info .podpis {
+      text-align: right;
+      width: 100%; }
+    .tekst .info .info-levo {
+      text-align: left; }
+    .tekst .info .info-desno {
+      text-align: right; }
 
-section {
-  text-align: center;
-  position: relative; }
-  section .dobrodosli {
-    display: -webkit-box;
-    display: -moz-box;
-    display: box;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flexbox;
-    display: flex;
-    height: 510px;
-    width: 510px;
-    -webkit-box-lines: multiple;
-    -moz-box-lines: multiple;
-    box-lines: multiple;
-    -webkit-flex-wrap: wrap;
-    -moz-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    margin: 25px auto;
-    font-family: "Tahoma";
-    font-weight: 500;
+@media (max-width: 540px) {
+  .top-rule {
+    display: block;
+    margin: 0 20px 0; }
+
+  .bottom-rule {
+    display: block;
+    margin: 0 20px 30px; }
+
+  .tekst {
+    border: 0px solid #3e3b34;
+    max-width: 540px;
+    height: auto;
+    margin: 0px auto;
+    padding: 30px;
     font-size: 16px;
-    color: #4C4C4C;
-    background-color: rgba(153, 51, 255, 0.2); }
-    section .dobrodosli .about {
-      width: 100%;
-      text-align: left;
-      padding: 30px 40px 0px;
-      margin: 0 auto; }
-      section .dobrodosli .about span {
-        display: block;
-        margin-bottom: 7px; }
-    section .dobrodosli .info {
-      width: 100%;
-      position: relative;
-      padding: 20px 40px 40px;
-      font-size: 14px;
+    text-align: left; }
+    .tekst .info {
       display: -webkit-box;
       display: -moz-box;
       display: box;
@@ -439,6 +517,13 @@ section {
       display: -moz-flex;
       display: -ms-flexbox;
       display: flex;
+      -webkit-box-lines: multiple;
+      -moz-box-lines: multiple;
+      box-lines: multiple;
+      -webkit-flex-wrap: wrap;
+      -moz-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
       -webkit-box-pack: justify;
       -moz-box-pack: justify;
       box-pack: justify;
@@ -456,73 +541,158 @@ section {
       -ms-align-items: flex-end;
       -o-align-items: flex-end;
       align-items: flex-end;
-      -ms-flex-align: end; }
-      section .dobrodosli .info .podjetje {
+      -ms-flex-align: end;
+      margin-top: 15px;
+      font-size: 15px;
+      font-weight: 600; }
+      .tekst .info .podpis {
+        width: 100%;
+        text-align: left;
+        font-size: 15px;
+        font-weight: 600; }
+      .tekst .info .info-levo {
+        margin-top: 10px;
         text-align: left; }
-      section .dobrodosli .info .telefon {
-        text-align: right; }
-
-.about {
-  padding: 10px; }
+      .tekst .info .info-desno {
+        margin-top: 10px;
+        text-align: right; } }
+.top-rule, .bottom-rule {
+  display: none;
+  margin: 0 auto 0;
+  height: 6px;
+  max-width: 540px;
+  background: #3e3b34; }
 
 .dobrodosli {
-  max-width: 510px;
-  position: relative; }
-  .dobrodosli form {
-    max-width: 450px;
-    margin: 0 auto 50px; }
-    .dobrodosli form input, .dobrodosli form textarea {
-      text-align: left;
-      background-color: rgba(255, 255, 255, 0.3);
-      color: #4C4C4C;
-      border: 3px solid rgba(255, 255, 255, 0.4);
-      width: 100%;
+  height: 510px;
+  width: 510px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0px auto 0px;
+  padding-bottom: 40px;
+  border: 8px solid #3e3b34;
+  font-family: "Open sans";
+  font-weight: 600;
+  font-size: 16px;
+  color: #4C4C4C;
+  background: rgba(190, 184, 168, 0.5);
+  max-width: 510px; }
+
+form {
+  max-width: 410px;
+  margin: 0 auto 0; }
+  form input, form textarea {
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #4C4C4C;
+    border: 3px solid rgba(255, 255, 255, 0.4);
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px; }
+    form input:focus, form textarea:focus {
+      outline: none;
+      border-color: #A5FFD6; }
+  form textarea {
+    height: 14em;
+    resize: none; }
+  form .submit-wrap {
+    margin-bottom: 40px;
+    text-align: right; }
+  form [type="submit"] {
+    color: #4C4C4C;
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    width: 25%; }
+    form [type="submit"]:hover {
+      background: rgba(255, 255, 255, 0.4);
+      border: 3px solid #3e3b34;
+      color: #4C4C4C; }
+  form .contact-info {
+    padding-top: 40px; }
+    form .contact-info label {
+      width: 50%;
+      float: left;
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
-      box-sizing: border-box;
-      padding: 10px; }
-      .dobrodosli form input:focus, .dobrodosli form textarea:focus {
-        outline: none;
-        border-color: rgba(153, 51, 255, 0.3); }
-    .dobrodosli form textarea {
-      height: 15em; }
-    .dobrodosli form .submit-wrap {
-      text-align: right; }
-    .dobrodosli form [type="submit"] {
+      box-sizing: border-box; }
+      form .contact-info label:nth-child(1) {
+        padding-right: 10px; }
+      form .contact-info label:nth-child(2) {
+        padding-left: 10px; }
+  form label {
+    color: #4C4C4C;
+    font-family: "Open sans";
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: left;
+    display: block;
+    margin-bottom: 20px;
+    margin-top: 0px; }
+    form label span {
+      font-size: 14px;
+      display: block;
+      padding-bottom: 5px;
+      font-weight: 600; }
+
+@media (max-width: 540px) {
+  .top-rule {
+    display: block;
+    margin: 0 20px 0; }
+
+  .bottom-rule {
+    display: block;
+    margin: 0 20px 30px; }
+
+  .dobrodosli {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 0 30px 0;
+    position: relative;
+    border: 0px solid #3e3b34;
+    font-family: "Open sans";
+    font-weight: 600;
+    font-size: 18px; }
+
+  form {
+    height: auto;
+    max-width: 540px; }
+    form .contact-info {
+      padding-top: 25px; }
+      form .contact-info label {
+        width: 100%; }
+        form .contact-info label:nth-child(1) {
+          padding: 0; }
+        form .contact-info label:nth-child(2) {
+          padding: 0; }
+    form label {
       color: #4C4C4C;
-      background: rgba(255, 255, 255, 0.1);
-      text-align: center;
-      font-size: 18px;
+      font-family: "Open sans";
       font-weight: 400;
+      font-size: 16px;
       text-transform: uppercase;
-      width: 33%; }
-      .dobrodosli form [type="submit"]:hover {
-        background: rgba(255, 255, 255, 0.8);
-        border: 3px solid rgba(153, 51, 255, 0.45);
-        color: #4C4C4C; }
-    .dobrodosli form .contact-info {
-      width: 430px;
-      padding-top: 30px; }
-      .dobrodosli form .contact-info label {
-        width: 50%;
-        float: left;
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box; }
-        .dobrodosli form .contact-info label:nth-child(1) {
-          padding-right: 10px; }
-        .dobrodosli form .contact-info label:nth-child(2) {
-          padding-left: 10px; }
-    .dobrodosli form label {
-      color: #4C4C4C;
-      font-family: "Tahoma";
-      font-weight: 400;
       text-align: left;
       display: block;
       margin-bottom: 20px;
       margin-top: 0px; }
-      .dobrodosli form label span {
+      form label span {
         font-size: 16px;
         display: block;
-        padding-bottom: 5px;
-        font-weight: 400; }
+        margin-top: 0px;
+        padding-bottom: 4px;
+        font-weight: 600; }
+    form .submit-wrap {
+      margin-top: 25px;
+      margin-bottom: 0px;
+      padding-bottom: 30px;
+      text-align: right; }
+    form [type="submit"] {
+      width: 100%; } }

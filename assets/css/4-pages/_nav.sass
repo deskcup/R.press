@@ -1,114 +1,110 @@
-h1
-	font-family: Tahoma
-	font-size: 48px
-	font-transform: uppercase
-	color: red
 
-
-body
-	background:
-		image: url(../img/blago.jpg)
-
-header
+.nav-test
+  +display(flex)
+  +justify-content(space-between)
+  +align-items(flex-end)
+  margin: 10px auto 24px
+  height: 180px
+  width: 510px
+  //background: pink
   
-	.header-lock
-		width: 510px
-		margin: 50px auto 0
-		position: relative
-    
-		.logo-plus
-			+display(flex)
-			height: 108px
+  .logo
+    background:
+      position: 50% 50%, 50% 50%
+      image: url(../img/logo.svg), url(../img/logo-bg.svg)
+      size: contain, contain
+    fill: rgba(62, 59, 52,1)
+    position: relative
+    //background: palegreen
+    height: 180px
+    width: 180px
+    text-align: center
+    +box-sizing(border-box)
+    border: 12px solid rgba(62, 59, 52,1)
+    vertical-align: center
 
-			.logo
-				+size(108px)
-				+box-sizing(border-box)
-				path
-					fill: rgba(153,51,255,0.25)
+  .pisite
+    position: relative
+    background: #beb8a8
+      //position: 50% 50%
+      //image: url(../img/logo.svg)
+      //size: contain
+    fill: rgba(62, 59, 52,1)
+    color: rgba(62, 59, 52,1)
+    right: 0px
+    bottom: 0px
+    height: 54px
+    width: 54px
+    //background: khaki
+    text-align: center
+    +box-sizing(border-box)
+    border: 4px solid rgba(62, 59, 52,1)
 
-			.press
-				width: 323px
-				path
-					fill: rgba(153,51,255,0.25)
- 
-		.nav-btn
-			+display(flex)
-			+justify-content(space-between)
-			position: relative
-			margin: 0 auto
+    &:hover
+      color: rgba(62, 59, 52,1)       
+      border: 4px solid #A5FFD6
 
-			.btn
-				+size(108px)
-				+box-sizing(border-box)
-				border: 3px solid rgba(153,51,255,0.0)
-				margin-top: 23px
-				text-align: center
-				position: relative
-				border-radius: 100%
-				color: rgba(76,76,76,0.7)
-				background:
-					color: rgba(153,51,255,0.2)
+    &.icon-envelope
+      padding-top: 4px        
+      font-size: 24px
 
-				&:hover
-					color: rgba(86,29,142,0.9)				
-					border: 3px solid rgba(153,51,255,0.2)
+    .btn-name
+      position: absolute
+      bottom: 5px
+      left: 0
+      right: 0
+      font:
+        family: 'Open sans'
+        size: 10px
+        weight: 800
+      text-transform: uppercase
 
-				&.icon-home
-					padding-top: 20px
-					font-size: 40px
+  .current
+    color: rgba(255,255,255,0.4)
+    border: 4px solid #A5FFD6
 
-				&.icon-tint
-					padding-top: 22px
-					font-size: 38px
+  p
+    position: absolute
+    left: 50%
+    top: 50%
+    +transform(translate(-50%, -50%))
 
-				&.icon-gift
-					padding-top: 18px		
-					padding-left: 8px
-					font-size: 42px
+@media (max-width: 540px)
 
-				&.icon-envelope
-					padding-top: 23px				
-					font-size: 32px
+  .nav-test
+    margin: 20px auto 16px
+    width: 100%
+    height: auto
 
-				&.icon-camera-retro
-				padding-top: 24px				
-				font-size: 32px
+    .logo
+      height: 120px
+      width: 120px
+      border: 10px solid rgba(62, 59, 52,1)
+      margin-left: 20px
 
-				.btn-name
-					position: absolute
-					bottom: 26px
-					left: 0
-					right: 0
-					font:
-						family: 'Tahoma'
-						size: 12px
-						weight: 600
-					text-transform: uppercase
-			
-			.current
-				color: rgba(86,29,142,0.9)
-				border: 3px solid rgba(153,51,255,0.2)
+    .pisite
+      right: 20px
+      bottom: 0px
+      height: 54px
+      width: 54px
+      //background: khaki
+      text-align: center
+      +box-sizing(border-box)
+      border: 4px solid rgba(62, 59, 52,1)
 
-		.tint-1
-			z-index: 1
-			display: block
-			position: absolute
-			+size(154px)
-			top: 200px
-			left: -200px
+      &:hover
+        color: rgba(62, 59, 52,1)        
+        border: 4px solid #A5FFD6
 
-		.tint-2
-			z-index: 1
-			display: none
-			position: absolute
-			+size(64px)
-			top: 150px
-			left: 550px
-		
-		.tint-3
-			z-index: 1
-			display: block
-			position: absolute
-			+size(70px)
-			top: 440px
-			left: -100px
+      &.icon-envelope
+        padding-top: 5px        
+        font-size: 20px
+
+      .btn-name
+        bottom: 5px
+        font:
+          size: 9px
+
+    .current
+      color: rgba(255,255,255,0.4)
+      border: 4px solid #A5FFD6

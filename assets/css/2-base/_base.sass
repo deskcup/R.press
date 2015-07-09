@@ -3,7 +3,9 @@
 .gigantic, .huge, .large, .bigger, .big, 
 h1, h2, h3, h4, h5, h6
   color: $accent-color
+  font-family: 'Open Sans', sans-serif
   font-weight: bold
+  text-align: center
 
 .gigantic
   font-size: 110px
@@ -35,6 +37,7 @@ h1, h2, h3, h4, h5, h6
 
 p
   margin: 0 0 20px 0
+  font-family: 'Open Sans', sans-serif
 
 em
   font-style: italic
@@ -85,10 +88,40 @@ body
 // Basic Styles
 
 body
-  background: $bg-color
+  background:
+    image: url(..//img/bg.png)
+    repeat: repeat
+    size: 100px auto
   font-size: 14px
   line-height: 1.6
-  font-family: 'Open Sans' sans-serif
+  font-family: 'Open Sans', sans-serif
   color: $text-color
   -webkit-font-smoothing: antialiased
   -webkit-text-size-adjust: 100%
+
+.centering
+  margin: auto
+  width: 510px
+  height: 720px
+  position: absolute
+  top: 0
+  left: 0
+  bottom: 0
+  right: 0
+  //background: peachpuff
+
+
+@media (max-width: 540px)
+  
+  body
+    background:
+      image: url(..//img/bg.png)
+      repeat: repeat
+      size: 120px auto
+  
+  .centering
+    width: auto
+    height: auto
+    margin: 0 auto
+    position: relative
+    //background: peachpuff
