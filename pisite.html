@@ -1,0 +1,25 @@
+---
+layout: default
+---
+<div class="top-rule"></div>
+
+  <!-- <div class="about"><p>Pišite nam kaj lepega.</p></div> -->
+<div class="dobrodosli">
+
+  <form method="POST" action="//formspree.io/{{site.mail}}">
+    <div class="contact-info">
+      <label><span>Vaše ime</span>
+      <input type="text" name="name"></label>
+      <label><span>Vaš e-mail</span>
+      <input type="email" name="_replyto"></label>
+    </div>
+      <label><span>Vaše sporočilo</span>
+      <textarea name="message"></textarea></label>
+    <div class="submit-wrap">
+      <input type="submit" value="Pošlji">
+    </div>
+  </form>
+
+</div>
+
+<div class="bottom-rule"></div>

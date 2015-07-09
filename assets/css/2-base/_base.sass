@@ -1,0 +1,127 @@
+//	Typography
+
+.gigantic, .huge, .large, .bigger, .big, 
+h1, h2, h3, h4, h5, h6
+  color: $accent-color
+  font-family: 'Open Sans', sans-serif
+  font-weight: bold
+  text-align: center
+
+.gigantic
+  font-size: 110px
+  line-height: 1.09
+  letter-spacing: -2px
+
+.huge, h1
+  font-size: 68px
+  line-height: 1.05
+  letter-spacing: -1px
+
+.large, h2
+  font-size: 42px
+  line-height: 1.14
+
+.bigger, h3 
+  font-size: 26px
+  line-height: 1.38
+
+.big, h4
+  font-size: 22px
+  line-height: 1.38
+
+.small, small 
+  font-size: 10px
+  line-height: 1.2
+
+
+
+p
+  margin: 0 0 20px 0
+  font-family: 'Open Sans', sans-serif
+
+em
+  font-style: italic
+
+strong
+  font-weight: bold
+
+hr
+  border: solid #ddd
+  border-width: 1px 0 0
+  clear: both
+  margin: 10px 0 30px
+  height: 0
+
+
+
+// Links
+
+a
+  color: $link-color
+  text-decoration: none
+  outline: 0
+  
+a:hover, a:focus
+  color: lighten($link-color, 20%)
+
+
+
+// Selection colors (easy to forget)
+
+::selection
+  background: $selection-color
+  
+::-moz-selection
+  background: $selection-color
+  
+img::selection
+  background: transparent
+  
+img::-moz-selection
+  background: transparent
+  
+body
+  -webkit-tap-highlight-color: $selection-color
+
+
+
+// Basic Styles
+
+body
+  background:
+    image: url(..//img/bg.png)
+    repeat: repeat
+    size: 100px auto
+  font-size: 14px
+  line-height: 1.6
+  font-family: 'Open Sans', sans-serif
+  color: $text-color
+  -webkit-font-smoothing: antialiased
+  -webkit-text-size-adjust: 100%
+
+.centering
+  margin: auto
+  width: 510px
+  height: 720px
+  position: absolute
+  top: 0
+  left: 0
+  bottom: 0
+  right: 0
+  //background: peachpuff
+
+
+@media (max-width: 540px)
+  
+  body
+    background:
+      image: url(..//img/bg.png)
+      repeat: repeat
+      size: 120px auto
+  
+  .centering
+    width: auto
+    height: auto
+    margin: 0 auto
+    position: relative
+    //background: peachpuff

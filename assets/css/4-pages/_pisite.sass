@@ -1,0 +1,159 @@
+.top-rule, .bottom-rule
+  display: none
+  margin: 0 auto 0
+  height: 6px
+  max-width: 540px
+  background: rgba(62, 59, 52,1)
+
+.dobrodosli
+  +size(510px)
+  +box-sizing(border-box)
+  margin: 0px auto 0px
+  padding-bottom: 40px
+  border: 8px solid rgba(62, 59, 52,1)
+  font:
+    family: 'Open sans'
+    weight: 600
+    size: 16px
+  color: #4C4C4C
+  background: rgba(190,184,168,0.5)
+  max-width: 510px
+
+form
+  max-width: 410px
+  margin: 0 auto 0
+  
+  input, textarea
+    text-align: left
+    background-color: rgba(255,255,255,0.3)
+    color: #4C4C4C
+    border: 3px solid rgba(255,255,255,0.4)
+    width: 100%
+    +box-sizing(border-box)
+    padding: 10px
+    
+    &:focus
+      outline: none
+      border-color: #A5FFD6
+  
+  textarea
+    height: 14em
+    resize: none
+  
+  .submit-wrap
+    margin-bottom: 40px
+    text-align: right
+
+  [type="submit"]
+    // background: $accent
+    color: #4C4C4C
+    border: 3px solid rgba(255,255,255,0.5)
+    background: rgba(255,255,255,0.0)
+    text-align: center
+    font-size: 18px
+    font-weight: 600
+    text-transform: uppercase
+    width: 25%
+    
+    &:hover
+      background: rgba(255,255,255,0.4)
+      border: 3px solid rgba(62, 59, 52,1)
+      color: #4C4C4C
+
+  .contact-info
+    //width: 410px
+    padding-top: 40px
+
+    label
+      width: 50%
+      float: left
+      +box-sizing(border-box)
+
+      &:nth-child(1)
+        padding-right: 10px
+
+      &:nth-child(2)
+        padding-left: 10px
+
+  label
+    color: #4C4C4C
+    font-family: 'Open sans'
+    font-weight: 400
+    font-size: 16px
+    text-transform: uppercase
+    text-align: left
+    display: block
+    //padding-bottom: 10px
+    margin-bottom: 20px
+    margin-top: 0px
+
+    span
+      font-size: 14px
+      display: block
+      padding-bottom: 5px
+      font-weight: 600
+
+@media (max-width: 540px)
+
+  .top-rule
+    display: block
+    margin: 0 20px 0
+
+  .bottom-rule
+    display: block
+    margin: 0 20px 30px
+
+  .dobrodosli
+    display: block
+    width: 100%
+    height: auto
+    padding: 0 30px 0
+    position: relative
+    border: 0px solid rgba(62, 59, 52,1)
+    //margin: 0 10px 0
+    font:
+      family: 'Open sans'
+      weight: 600
+      size: 18px
+
+  form
+    height: auto
+    max-width: 540px
+
+    .contact-info
+      padding-top: 25px
+
+      label
+        width: 100%
+        &:nth-child(1)
+          padding: 0
+      
+        &:nth-child(2)
+          padding: 0
+          
+    label
+      color: #4C4C4C
+      font-family: 'Open sans'
+      font-weight: 400
+      font-size: 16px
+      text-transform: uppercase
+      text-align: left
+      display: block
+      margin-bottom: 20px
+      margin-top: 0px
+
+      span
+        font-size: 16px
+        display: block
+        margin-top: 0px
+        padding-bottom: 4px
+        font-weight: 600
+
+    .submit-wrap
+      margin-top: 25px
+      margin-bottom: 0px
+      padding-bottom: 30px
+      text-align: right
+
+    [type="submit"]
+      width: 100%

@@ -1,0 +1,86 @@
+.top-rule, .bottom-rule
+  display: none
+  margin: 0 auto 0
+  height: 6px
+  max-width: 540px
+  background: rgba(62, 59, 52,1)
+
+.tekst
+  +display(flex)
+  +flex-wrap(wrap)
+  margin: 0 auto 0px
+  max-width: 510px
+  height: 510px
+  +box-sizing(border-box)
+  border: 8px solid rgba(62, 59, 52,1)
+  padding: 40px
+  font-size: 14px
+  font-weight: 600
+  background: rgba(190,184,168,0.5)
+
+  .opis
+    span
+      display: block
+      margin-bottom: 10px
+
+  .info
+    font-size: 14px
+    font-weight: 600
+    +display(flex)
+    +flex-wrap(wrap)
+    +justify-content(space-between)
+    +align-items(flex-end)
+    width: 100%
+    
+    .podpis
+      text-align: right
+      width: 100%
+
+    .info-levo
+      text-align: left
+
+    .info-desno
+      text-align: right
+
+@media (max-width: 540px)
+
+  .top-rule
+    display: block
+    margin: 0 20px 0
+
+  .bottom-rule
+    display: block
+    margin: 0 20px 30px
+    
+  .tekst
+    border: 0px solid rgba(62, 59, 52,1)
+    max-width: 540px
+    height: auto
+    margin: 0px auto
+    padding: 30px
+    font-size: 16px
+    text-align: left
+
+    .info
+      +display(flex)
+      +flex-wrap(wrap)
+      +justify-content(space-between)
+      +align-items(flex-end)
+      margin-top: 15px
+      font-size: 15px
+      font-weight: 600
+      //display: block
+
+      .podpis
+        width: 100%
+        text-align: left
+        font-size: 15px
+        font-weight: 600
+      
+      .info-levo
+        margin-top: 10px
+        text-align: left
+
+      .info-desno
+        margin-top: 10px
+        text-align: right

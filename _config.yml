@@ -1,0 +1,9 @@
+markdown: redcarpet
+baseurl: /R.press
+exclude: ['README.md']
+permalink: pretty
+mail: tadej.bajda@gmail.com
+
+sass:
+  sass_dir: assets/css
+  style: :nested
